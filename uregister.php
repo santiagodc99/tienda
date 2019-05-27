@@ -1,5 +1,5 @@
 <?php
-
+// comentrio prueba
 include("database.php");
 $firstname=$_POST['uname'];
 $lastname=$_POST['ulastname'];
