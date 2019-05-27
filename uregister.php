@@ -1,5 +1,5 @@
 <?php
-// Prueba para branch
+
 include("database.php");
 $firstname=$_POST['uname'];
 $lastname=$_POST['ulastname'];

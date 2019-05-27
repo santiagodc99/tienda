@@ -1,6 +1,7 @@
 <?php
     include 'database.php';
 
+    //prueba ramas
     $id=$_GET['id'];
     $cod=$_GET['cod'];
 
