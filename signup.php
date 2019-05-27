@@ -12,7 +12,6 @@
 	function comprobarClave(){
 		var a1 = document.form1.pswd.value
 		var a2 = document.form1.pswd2.value
-
 		if (a1 == a2)
 			document.form1.submit()
 		else
@@ -35,6 +34,12 @@
     <div class="form-group">
       <label for="uname">Lastname:</label>
       <input type="text" class="form-control" id="ulastname" placeholder="Enter Lastname" name="ulastname" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="form-group">
+      <label for="id">Id:</label>
+      <input type="number" class="form-control" id="id" placeholder="Enter ID" name="id" required>
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
@@ -65,7 +70,10 @@
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-
+    <div class="form-group">
+      <label for="img">Image:</label><br>
+      <input type="file" id="image" name="image" accept="image/png, .jpeg, .jpg, image/gif">
+    </div>
     <button type="button" class="btn btn-primary" onClick="comprobarClave()">Register</button>
   </form>
 </div>
