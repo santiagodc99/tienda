@@ -38,6 +38,12 @@
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
+    <div class="form-group">
+      <label for="id">Id:</label>
+      <input type="number" class="form-control" id="id" placeholder="Enter ID" name="id" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
 	<div class="form-group">
       <label for="uname">Gender:</label>
       <select class="form-control" name="gender" >
@@ -65,7 +71,10 @@
       <div class="valid-feedback">Valid.</div>
       <div class="invalid-feedback">Please fill out this field.</div>
     </div>
-
+    <div class="form-group">
+      <label for="img">Image:</label><br>
+      <input type="file" id="image" name="image" accept="image/png, .jpeg, .jpg, image/gif">
+    </div>
     <button type="button" class="btn btn-primary" onClick="comprobarClave()">Register</button>
   </form>
 </div>
