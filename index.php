@@ -18,7 +18,7 @@
       <h2>Mi tienda</h2>
       <br>
       <!-- Nav tabs -->
-      
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <input class="form-control mr-sm-2" name="consulta" id="consult" type="text" placeholder="Busca producto por nombre o código">
         <a class="btn btn-primary" href="index.php?search">Buscar</a>
@@ -40,7 +40,7 @@
       <a class="nav-link disabled" href="#">Disabled</a>
     </li>
   </ul>
-      
+
     </nav>
     <br>
   </header>
@@ -73,17 +73,18 @@
                       echo "<td>".$row['codprod']."</td>";
                       echo "<td>".$row['nomprod']."</td>";
                       echo "<td>".$row['cantprod']."</td>";
-                      echo "<td>$".$row['pcosto']."</td>
-                      <td><a href='form_update.php?id=".$row['item']."&cod=".$row['codprod']."&nom=".$row['nomprod']."&cant=".$row['cantprod']."'><img src='icons/edit_icon.png' width='20'></a> 
+                      echo "<td>$".$row['pcosto']."</td>";
+                      echo "<td align='center'><img src=".$row['imagen']." width=50></td>";
+                      echo "<td><a href='form_update.php?id=".$row['item']."&cod=".$row['codprod']."&nom=".$row['nomprod']."&cant=".$row['cantprod']."'><img src='icons/edit_icon.png' width='20'></a>
                       <a href='delete.php?id=".$row['item']."&cod=".$row['codprod']."'><img src='icons/delecte_icon.png' width='20'></a></td></tr>";
                       $n++;
                   }
               }else{
                   echo "<div class=alert alert-success>
-                  <strong>!no hay productos registrados!.</strong> 
+                  <strong>!no hay productos registrados!.</strong>
               </div>";
               }
-              
+
       ?>
     </tbody>
   </table>
@@ -96,7 +97,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
-
-
-
-

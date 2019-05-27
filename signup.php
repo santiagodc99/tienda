@@ -12,7 +12,6 @@
 	function comprobarClave(){
 		var a1 = document.form1.pswd.value
 		var a2 = document.form1.pswd2.value
-
 		if (a1 == a2)
 			document.form1.submit()
 		else
@@ -24,7 +23,7 @@
 
 <div class="container">
   <h2>Sign Up</h2>
-  <p>Formulario de registro de usuarios</p>
+  <p>Registro de usuario</p>
   <form name="form1"action="uregister.php" class="was-validated" method="POST">
     <div class="form-group">
       <label for="uname">Fisrtname:</label>
