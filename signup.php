@@ -23,7 +23,7 @@
 
 <div class="container">
   <h2>Sign Up</h2>
-  <p>Formulario de registro de usuarios</p>
+  <p>Registro de usuarios</p>
   <form name="form1"action="uregister.php" class="was-validated" method="POST">
     <div class="form-group">
       <label for="uname">Fisrtname:</label>
